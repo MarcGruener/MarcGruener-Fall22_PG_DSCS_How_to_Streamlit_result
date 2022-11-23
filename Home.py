@@ -1,7 +1,8 @@
 import streamlit as st
 
 col1, col2 = st.columns(2)
-col2.image('./home/profile.png')
+with col2:
+    st.image('./home/profile.png')
 
 col1.header('Marc-Robin Grüner')
 col1.markdown('''
